@@ -7,10 +7,20 @@ package pl.com.bottega.webapp.model;
  */
 
 public enum ContactType {
-    PHONE,
-    MOBILE,
-    HOME_PHONE,
-    SKYPE,
-    MAIL,
-    ICQ
+    PHONE("Тел."),
+    MOBILE("Моб.тел."),
+    HOME_PHONE("Домашний тел."),
+    SKYPE("Skype"),
+    MAIL("Email"),
+    ICQ("ICQ");
+
+    private String contactType;
+
+    ContactType(String contactType) {
+        this.contactType = contactType;
+    }
+
+    public String getContactType() {
+        return contactType;
+    }
 }

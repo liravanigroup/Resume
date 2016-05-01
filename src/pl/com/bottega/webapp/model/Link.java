@@ -5,8 +5,8 @@ package pl.com.bottega.webapp.model;
  * 2016-04-30.
  */
 public class Link {
-    private final String name;
-    private final String url;
+    private String name;
+    private String url;
 
     public Link(String name, String url) {
         this.name = name;
@@ -16,6 +16,10 @@ public class Link {
     public Link(Link link){
         this.name = link.name;
         this.url = link.url;
+
+    }
+
+    public Link() {
 
     }
 
